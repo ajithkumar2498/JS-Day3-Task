@@ -1,14 +1,11 @@
-let filterpalindrome = function(arr){
-    let spl=[]
-    let rev=[]
-    for(let i=0;i<arr.length;i++){
-        spl.push(arr[i].split(" "))
-    }
-    for(let i=0;i<spl.length;i++){
-        rev.push(spl[i].reverse())
-    }
+const arr = ['mom', 'dad', 'abcde', 'racecar', 'momom','nad','refer'];
 
-    return rev.join(" ")
+function namePalindrome(arr) {
+  return arr.filter((curr, idx, arr) => {
+    const splitArr = curr.split('');
+    const reversedString = splitArr.reduceRight((prev, curr) => ( prev + curr ), '');
+    if (curr === reversedString) return curr;
+  })
 }
 
-console.log(filterpalindrome(["hii","level","12345"]))
+console.log(namePalindrome(arr));
