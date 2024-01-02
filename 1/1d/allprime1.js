@@ -6,6 +6,7 @@
    const filtered = arr.filter(el => !(function (n){})(el));
    console.log(filtered) ;
 })([17, 59, 3, 56, 4, 331, 41, 87, 8, 47, 34]);
+
 ( function(n) {
    if (n === 1){
    return false;

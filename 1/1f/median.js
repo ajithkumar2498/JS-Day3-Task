@@ -1,4 +1,4 @@
-function getMedian(ar1, ar2, n)
+const getMedian = function (ar1, ar2, n)
     {
     let j = 0;
     let i = n - 1;
@@ -20,7 +20,7 @@ function getMedian(ar1, ar2, n)
     let n1 = 5;
     let n2 = 5;
     if (n1 == n2){
-        console.log("Median is "+ getMedian(ar1, ar2, n1));
+        console.log(`Median is ${getMedian(ar1, ar2, n1)}`);
     }
    
     
